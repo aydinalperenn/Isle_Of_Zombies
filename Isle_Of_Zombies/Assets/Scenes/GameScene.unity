@@ -1486,10 +1486,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7882512725636611520, guid: 09ec5a54ff09aa7469da7c4dc525f133, type: 3}
-      propertyPath: MaxDistance
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 8685158209267036241, guid: 09ec5a54ff09aa7469da7c4dc525f133, type: 3}
       propertyPath: m_Name
       value: Flame
