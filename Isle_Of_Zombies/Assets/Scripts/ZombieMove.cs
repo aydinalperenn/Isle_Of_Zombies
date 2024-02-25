@@ -63,7 +63,6 @@ public class ZombieMove : MonoBehaviour
     {
         if (c.collider.gameObject.tag.Equals("Bullet"))
         {
-            Debug.Log("Test");
             zombieHealth--;
             if (zombieHealth == 0)
             {

@@ -12,6 +12,7 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         scoreText.text = "Score: " + PlayerPrefs.GetInt("Score");
     }
 

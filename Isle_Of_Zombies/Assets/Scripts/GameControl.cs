@@ -27,6 +27,7 @@ public class GameControl : MonoBehaviour
         {
             Vector3 pos = new Vector3 (Random.Range(160,304), 25f, Random.Range(200,310));
             Instantiate(zombie, pos, Quaternion.identity);
+            createdTime = Random.Range(5, 15);
             timer = createdTime;
         }
     }

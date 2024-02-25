@@ -44,7 +44,6 @@ public class PlayerControl : MonoBehaviour
         if (c.collider.gameObject.tag.Equals("Zombie"))     // zombi saldýrdýðýnda
         {
             aSource.PlayOneShot(takeDamage, 1f);
-            Debug.Log("Zombie saldýrdý");
             health -= 10f;          // can 10 azalsýn
             float healthPercent = health / 100f;
             healthImage.fillAmount = healthPercent;         // healthbar güncellensin
@@ -73,6 +72,12 @@ public class PlayerControl : MonoBehaviour
             healthImage.fillAmount = healthPercent;         // healthbar güncellensin
             healthImage.color = Color.Lerp(Color.red, Color.green, healthPercent);      // can azaldýkça kýrmýzýya dönsün diye
             Destroy(c.gameObject);
+        }
+
+        if (c.CompareTag("FallDamage"))
+        {
+            aSource.PlayOneShot(death, 1f);
+            gameControl.GameOver();
         }
     }
 }
