@@ -768,6 +768,7 @@ GameObject:
   - component: {fileID: 4049612232615546576}
   - component: {fileID: 4131704988538118966}
   - component: {fileID: 4165317951210823898}
+  - component: {fileID: 1324206453}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -850,3 +851,17 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4067226051557247492}
   m_Enabled: 1
+--- !u!114 &1324206453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067226051557247492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a411d81f480c8479c3b33352c9222f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoBonfire: {fileID: 0}
+  task: {fileID: 0}

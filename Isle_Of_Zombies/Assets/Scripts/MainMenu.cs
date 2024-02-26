@@ -1,23 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-
-    public TextMeshProUGUI scoreText;
-
-    void Start()
+    private void Awake()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        scoreText.text = "Score: " + PlayerPrefs.GetInt("Score");
     }
 
-
-    public void Restart()
+    public void StartGame()
     {
         SceneManager.LoadScene("GameScene");
     }
